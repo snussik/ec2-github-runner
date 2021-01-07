@@ -13,6 +13,7 @@ async function startEc2Instance(label, githubRegistrationToken) {
     'yum update -y',
     'yum install docker -y',
     'service docker start',
+    'yum install docker-compose -y',
     'mkdir actions-runner && cd actions-runner',
     'curl -O -L https://github.com/actions/runner/releases/download/v2.275.1/actions-runner-linux-x64-2.275.1.tar.gz',
     'tar xzf ./actions-runner-linux-x64-2.275.1.tar.gz',
